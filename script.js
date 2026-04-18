@@ -214,16 +214,6 @@ function calculateCost() {
   }
 }
 
-// ============ WEATHER FUNCTION ============
-function checkWeather() {
-  const city = document.getElementById('weatherCity')?.value;
-  if (city) {
-    document.getElementById('weatherResult').innerHTML = `<div class="alert alert-info"><i class="fas fa-cloud-sun"></i> ${city}: Sunny, 28°C. Great time to travel!</div>`;
-  } else {
-    alert("Enter city name");
-  }
-}
-
 // ============ FORM SUBMITS ============
 function setupBookingForm() {
   const bookingForm = document.getElementById('bookingForm');

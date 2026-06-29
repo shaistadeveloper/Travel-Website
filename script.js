@@ -36,16 +36,6 @@ const travelTips = [
   { icon: "fas fa-calendar-alt", title: "Best Time to Travel", tip: "Europe: May-Sep. Southeast Asia: Nov-Feb. Middle East: Oct-Mar. Plan accordingly." }
 ];
 
-// ============ GALLERY IMAGES ============
-const galleryImages = [
-  "images/beautiful-architecture-building-venetian-other-hotel-resort-casino.jpg",
-  "images/vertical-shot-bridge-river-surrounded-by-mountains-scotland.jpg",
-  "images/beautiful-rainbow-nature.jpg",
-  "images/famous-view-big-ben-houses-parliament-london-uk.jpg",
-  "images/empty-square-lake-city-park.jpg",
-  "images/aerial-shot-beautiful-lake-forest-with-small-residency-middle.jpg"
-];
-
 
 // ============ PREVIEW DESTINATIONS FOR HOME PAGE ============
 const previewDestinationsData = [
@@ -136,17 +126,6 @@ function renderTips() {
   }
 }
 
-// Render Gallery
-function renderGallery() {
-  const container = document.getElementById('galleryContainer');
-  if (container) {
-    container.innerHTML = galleryImages.map(img => `
-      <div class="col-md-4 col-sm-6">
-        <img src="${img}" class="gallery-img" onclick="showImage('${img}')">
-      </div>
-    `).join('');
-  }
-}
 
 // Show Image Modal
 function showImage(src) {
@@ -342,10 +321,6 @@ document.addEventListener('DOMContentLoaded', function() {
     renderTips();
   }
   
-  // Gallery Page
-  if (document.getElementById('galleryContainer')) {
-    renderGallery();
-  }
   
   // Home Page Preview
   if (document.getElementById('previewDestinations')) {

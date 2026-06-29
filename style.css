@@ -99,13 +99,7 @@ body {
   border-radius: 3px;
 }
 
-/* About Section */
-.about-section {
-  background: white;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-}
+
 
 .about-image img {
   width: 100%;
@@ -117,6 +111,38 @@ body {
 .about-text {
   padding: 2.5rem;
 }
+
+/* About page specific - full width text */
+    .about-text-full {
+      padding: 2.5rem;
+      background: white;
+      border-radius: 28px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    }
+    .about-text-full h2 {
+      color: #1e3a5f;
+      font-weight: 800;
+      text-align: center;
+    }
+    .about-text-full p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .about-text-full .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      .about-text-full {
+        padding: 1.5rem;
+      }
+      .about-text-full .stats {
+        gap: 1rem;
+      }
+    }
 
 /* Destination Cards */
 .destination-card {
@@ -224,20 +250,6 @@ body {
   margin-top: 5px;
 }
 
-/* Gallery */
-.gallery-img {
-  border-radius: 18px;
-  height: 220px;
-  object-fit: cover;
-  width: 100%;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.gallery-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
 
 /* Footer */
 footer {
